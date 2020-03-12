@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'MsMincho';
+  src: local('MsMincho'), url(./fonts/MSMINCHO.TTF) format('truetype');
+}
+
+body {
+  margin: 1em auto;
+  width: 66%;
+  font-family: MsMincho;
+}
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+.rider {
+  margin: 1em;
+  column-count: 2;
+}
+
+section {
+  text-align: left;
+  margin: 2px;
+  display: inline-block;
+}
+
+section ul {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+section li {
+  list-style-type: none;
+}
+
+.rider-items {
+  text-align: left;
+}
+
+.not-checked {
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    width: 76%;
+    background-color: lightblue;
+  }
+
+  .rider {
+    margin: 1em;
+    column-count: 1;
+  }
+}
+
+@media print {
+  input[type='checkbox'] {
+    display: none;
+  }
+}

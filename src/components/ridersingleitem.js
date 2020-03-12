@@ -1,42 +1,33 @@
-import React, { Component } from 'react'
-
+import React, { Component } from 'react';
 
 export default class RiderSingleItem extends Component {
-state = {
+  state = {
     checked: true
-}
+  };
 
-
-componentDidMount() {
-   
-}
-
-onChange = (event) => {
-    console.log(event);
+  onChange = () => {
     this.setState({
-        checked: !this.state.checked
-    })
-}
+      checked: !this.state.checked
+    });
+  };
 
-    render() {
- 
-
-
-
-        return (
-            <> 
-             <form>
-        <label>
-          <input
-            name="checked"
-            type="checkbox"
-            checked={this.state.checked}
-            onChange={this.onChange} />
-        </label>
-        <span className={this.state.checked ? null : "not-checked"} >{this.props.item}</span>
+  render() {
+    return (
+      <>
+        <form>
+          <label>
+            <input
+              name="checked"
+              type="checkbox"
+              checked={this.state.checked}
+              onChange={this.onChange}
+            />
+          </label>
+          <span className={this.state.checked ? null : 'not-checked'}>
+            {this.props.item}
+          </span>
         </form>
-      
-            </>
-        )
-    }
+      </>
+    );
+  }
 }

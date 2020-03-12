@@ -4,7 +4,7 @@ const riderData = [
     active: true,
     title: 'PRODUCTION',
     description:
-      'Physical works are subject to decomposition, or, if inert, also nonsynthetic*. Therefore,',
+      'Physical works are subject to decomposition, or, if inert, also nonsynthetic*.',
     items: [
       'no acrylic paints',
       'no plastics',
@@ -26,7 +26,7 @@ const riderData = [
     id: 2,
     active: true,
     title: 'EXHIBITION',
-    description: 'New exhibition materials are compostable. Therefore,',
+    description: 'New exhibition materials are compostable.',
     items: [
       'no vinyl — e.g., lettering, signage, banners',
       'no plexiglass',
@@ -38,7 +38,7 @@ const riderData = [
     id: 3,
     active: true,
     title: 'PACKING, STORAGE, SHIPPING',
-    description: 'New packing materials are compostable. Therefore,',
+    description: 'New packing materials are compostable.',
     items: [
       'no poly sheeting, bubble wrap, polyethylene, styrofoam, foamcore, etc.',
       'no plastic wraps for crates',
