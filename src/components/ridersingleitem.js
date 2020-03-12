@@ -15,7 +15,7 @@ export default class RiderSingleItem extends Component {
     return (
       <>
         <form>
-          <label>
+          <label className="checkbox">
             <input
               name="checked"
               type="checkbox"

@@ -45,9 +45,39 @@ section li {
   text-align: left;
 }
 
+
+
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox > input {
+  height: 1em;
+  width: 1em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid;
+
+  outline: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.checkbox > input:checked {
+  border: 1px solid;
+  background-color: rgb(185, 185, 185);
+ 
+}
+
 .not-checked {
   text-decoration: line-through;
 }
+
+
 
 @media only screen and (max-width: 900px) {
   body {
