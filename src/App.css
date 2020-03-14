@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'MsMincho';
-  src: local('MsMincho'),
-    url(./fonts/MSMINCHO.TTF) format('truetype');
+  src: local('MsMincho'), url(./fonts/MSMINCHO.TTF) format('truetype');
 }
 
 body {
@@ -75,38 +74,59 @@ section li {
 }
 
 .exhibition {
+  margin: 2em 1em 0;
+  font-size: 1.1em;
+  color: grey;
+}
+
+.exhibition-field {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 1em;
+}
+
+.exhibition label {
+  margin: 0 0.5em 0 0;
+}
+
+.dates {
+  display: flex;
 }
 
 .exhibition input {
+  flex: 1;
   font-family: MsMincho;
-  font-size: 1em;
+  font-size: 1.1em;
   border: none;
-  border-bottom: 1px solid;
-  margin: 1.2em 0 0;
+  border-bottom: 1px solid grey;
+  margin: 0 1em 1.5em 0;
 }
 
 .signatory {
-  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em
 }
 
-.signatory button{
+.signatory button {
   font-family: MsMincho;
   font-size: 1em;
-   padding:.5em;
+  padding: 0.5em;
+  margin-right: 1em;
   border: 1px solid;
   float: right;
+  height: 2em;
 }
 
+.signatories {
+  flex: 1 1;
+  margin-right: 1em;
+}
 
 .signer {
   display: flex;
 }
 
 .signer input {
+  flex: 1;
   display: inline-block;
   border: none;
   border-top: 1px solid;

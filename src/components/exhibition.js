@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 
 export class Exhibition extends Component {
+  state = {
+    title: '',
+    place: '',
+    startdate: '',
+    enddate: ''
+  };
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
   render() {
     return (
       <div>
@@ -8,14 +19,26 @@ export class Exhibition extends Component {
           <strong>EXHIBITION</strong> (title, place, dates)
         </h3>
         <div className="exhibition">
+          <div className="exhibition-field">
+            <label>Exhibition Title</label>
+            <input type="text" onChange={this.handleChange} name="title" />
+          </div>
 
-        <label>Exhibition Title <input type="text" name="title"  /></label>
-        <label>Institution Name <input type="text" name="place"  /></label>
+          <div className="exhibition-field">
+            <label>Institution Name</label>
+            <input type="text" onChange={this.handleChange} name="place" />
+          </div>
 
-            <label>Start Date<input type="date" name="startdate" /></label>
-            <label>End Date<input type="date" name="enddate" /></label> 
-             
-
+          <div className="dates">
+            <div className="exhibition-field">
+              <label>Start Date</label>
+              <input type="date" onChange={this.handleChange} name="startdate" />
+            </div>
+            <div className="exhibition-field">
+              <label>End Date</label>
+              <input type="date" onChange={this.handleChange} value={this.state.startdate ? this.state.startdate : null }name="enddate" />
+            </div>
+          </div>
         </div>
       </div>
     );
