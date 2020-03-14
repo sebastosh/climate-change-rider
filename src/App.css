@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'MsMincho';
   src: local('MsMincho'),
-    url(/static/media/MSMINCHO.e1ac4985.TTF) format('truetype');
+    url(./fonts/MSMINCHO.TTF) format('truetype');
 }
 
 body {
