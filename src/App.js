@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import riderData from './riderData';
 import Rider from './components/rider';
-import Signatory from './components/signatory'
+import Exhibition from './components/exhibition'
+import Signatories from './components/signatories'
 
 function App() {
   return (
@@ -35,7 +36,15 @@ function App() {
           );
         })}
       </div>
-      <Signatory />
+      <h2>NOTES</h2>
+        <div>
+          All the material Nos are for the purchase of virgin materials from a
+          for-profit business. Yes to non-primary use of these materials, e.g.
+          reuse of exisiting crates, materials stock, purchasing from
+          salvage/reuse centers, etc.
+        </div>
+      <Exhibition />
+      <Signatories />
     </div>
   );
 }

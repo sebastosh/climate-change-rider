@@ -13,7 +13,7 @@ export default class RiderSingleItem extends Component {
 
   render() {
     return (
-      <>
+    
         <form>
           <label className="checkbox">
             <input
@@ -27,7 +27,7 @@ export default class RiderSingleItem extends Component {
             {this.props.item}
           </span>
         </form>
-      </>
+   
     );
   }
 }
